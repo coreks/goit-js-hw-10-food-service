@@ -8,6 +8,8 @@ const themeToggleEL = document.querySelector('#theme-switch-toggle');
 const bodyEl = document.querySelector('body');
 
 const currentTheme = localStorage.getItem('theme');
+bodyEl.classList.add(LIGHT);
+
 if (currentTheme) {
   bodyEl.classList.add(currentTheme);
   if (currentTheme === DARK) {
